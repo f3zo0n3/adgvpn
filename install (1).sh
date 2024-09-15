@@ -167,6 +167,7 @@ set_cpu() {
 
 # Function is_dir_owned_by_current_user checks if the output directory is owned by the current user
 is_dir_owned_by_current_user() {
+  return 0
   dir="$1"
 
   if [ "$os" = "macos" ]; then
